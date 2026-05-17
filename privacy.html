@@ -62,11 +62,11 @@
     <div class="header">
       <div class="app-name">Focus On Yourself</div>
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: March 15, 2026</p>
+      <p class="last-updated">Last updated: May 17, 2026</p>
     </div>
 
     <div class="highlight-box">
-      <p><strong>Short version:</strong> Focus On Yourself does not collect, share, or sell your personal data. Everything you enter stays on your device and your private iCloud account. We have no servers, no analytics, and no third-party tracking.</p>
+      <p><strong>Short version:</strong> Focus On Yourself does not collect, share, or sell your personal data. Your check-ins, mood history, and journal entries stay on your device and your private iCloud account. We operate a content server to deliver articles, meditations, and affirmations — it receives no personal data from you. We have no analytics and no third-party tracking.</p>
     </div>
 
     <h2>1. What Data We Collect</h2>
@@ -92,25 +92,38 @@
     <h2>3. iCloud Sync</h2>
     <p>If you are signed in to iCloud, your app data syncs privately between your own Apple devices through Apple's iCloud infrastructure. This sync is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. We cannot see, access, or modify your iCloud data.</p>
 
-    <h2>4. No Third-Party Sharing</h2>
-    <p>We do not share your data with any third party — ever. We use no advertising SDKs, no analytics frameworks, no crash reporting services, and no social integrations.</p>
+    <h2>4. Content Server &amp; CDN</h2>
+    <p>Focus On Yourself fetches content — articles, meditation sessions, affirmation text, and narration audio — from our content server and a CDN (Supabase Storage). These requests are anonymous: no personal data, device identifiers, or account information is included. The server logs only standard HTTP request metadata (URL path, timestamp, response code) for operational purposes, and this data is not linked to you.</p>
+    <p>Narration audio files are downloaded once and cached locally on your device. Subsequent plays use the cached file and involve no network requests.</p>
 
-    <h2>5. Local Notifications</h2>
+    <h2>5. Apple Health (HealthKit)</h2>
+    <p>On iOS 18 or later, Focus On Yourself can write your daily mood check-in to the Apple Health app as a <em>State of Mind</em> entry. This feature requires your explicit permission.</p>
+    <ul>
+      <li>Mood data is written directly to the Health app on your device.</li>
+      <li>We do not read any other Health data from your device.</li>
+      <li>Health data is never transmitted to our servers.</li>
+      <li>You can revoke this permission at any time in Settings → Privacy &amp; Security → Health → Focus On Yourself.</li>
+    </ul>
+
+    <h2>6. No Third-Party Sharing</h2>
+    <p>We do not share your personal data with any third party — ever. We use no advertising SDKs, no analytics frameworks, no crash reporting services, and no social integrations.</p>
+
+    <h2>7. Local Notifications</h2>
     <p>If you enable daily reminders, Focus On Yourself schedules local notifications on your device. These notifications are generated entirely on-device and involve no external servers or network requests.</p>
 
-    <h2>6. Apple Intelligence (AI Affirmations)</h2>
+    <h2>8. Apple Intelligence (AI Affirmations)</h2>
     <p>On supported devices (iPhone 15 Pro or newer running iOS 26 or later), Focus On Yourself Pro can generate personalized affirmations using Apple Intelligence. All AI processing occurs entirely on-device via Apple's on-device models. No data is sent to any server — not ours, not Apple's AI servers — as part of this feature.</p>
 
-    <h2>7. Subscriptions</h2>
+    <h2>9. Subscriptions</h2>
     <p>Focus On Yourself Pro subscriptions are processed entirely by Apple through the App Store. We never see your payment information. Subscription management is handled by Apple at <a href="https://apps.apple.com/account/subscriptions" target="_blank">apps.apple.com/account/subscriptions</a>.</p>
 
-    <h2>8. Children's Privacy</h2>
+    <h2>10. Children's Privacy</h2>
     <p>Focus On Yourself is rated 4+ and does not knowingly collect personal information from children. Since no data is transmitted to us at all, there is no risk of inadvertent collection from users of any age.</p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>11. Changes to This Policy</h2>
     <p>If we ever update this policy, we will update the "Last updated" date above and post the new version at this same URL. We will not reduce your privacy rights without clear notice in the app.</p>
 
-    <h2>10. Contact</h2>
+    <h2>12. Contact</h2>
     <p>Questions about this privacy policy? Reach us at:</p>
     <p><a href="mailto:foysupport@gmail.com">foysupport@gmail.com</a></p>
 
